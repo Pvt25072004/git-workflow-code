@@ -1,1 +1,1 @@
-console.log("product.model.js loaded");
+console.log("hotfix product.model.js loaded");
