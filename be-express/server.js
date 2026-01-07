@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors");
 
 mongoose
   .connect("mongodb://localhost:27017/demo_cloudcomputing")
@@ -11,5 +12,5 @@ mongoose
     console.log("Error connecting to MongoDB", err);
   });
 app.listen(8080, () => {
-  console.log("Server is running on port 8080");
+  console.log("Server is running on port: 8080");
 });
